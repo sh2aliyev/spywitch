@@ -26,6 +26,7 @@ export default {
           low: 'hsl(var(--c-line-low))',
           high: 'hsl(var(--c-line-high))',
         },
+        'c-accent': 'hsl(var(--c-accent))',
       },
       spacing: {
         's-gap': 'var(--s-gap)',

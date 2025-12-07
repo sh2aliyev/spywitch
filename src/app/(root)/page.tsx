@@ -1,5 +1,7 @@
 import IconSpyWitch from '@/components/icons/spywitch';
 import PageArea from '@/components/layout/page-area';
+import { SYS_PAGES } from '@/system/pages';
+import Link from 'next/link';
 
 export default function Page() {
   return (
@@ -12,6 +14,12 @@ export default function Page() {
           SpyWitch allows you to track chat events, such as messages, subs, cheers, etc., in any channel on the
           platform.
         </p>
+        <Link
+          href={SYS_PAGES.setup.path}
+          className="mt-s-gap rounded-sm bg-c-accent px-3 py-1.5 font-medium text-c-fg hover:bg-c-accent/90"
+        >
+          Get Started
+        </Link>
       </div>
     </PageArea>
   );
